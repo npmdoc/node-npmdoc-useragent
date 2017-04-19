@@ -1,0 +1,1130 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/3rd-Eden/useragent#readme">useragent (v2.1.13)</a>
+</h1>
+<h4>Fastest, most accurate &amp; effecient user agent string parser, uses Browserscope's research for parsing</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent">module useragent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.useragent">
+            function <span class="apidocSignatureSpan"></span>useragent
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Agent">
+            function <span class="apidocSignatureSpan">useragent.</span>Agent
+            <span class="apidocSignatureSpan">(family, major, minor, patch, source)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Device">
+            function <span class="apidocSignatureSpan">useragent.</span>Device
+            <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.OperatingSystem">
+            function <span class="apidocSignatureSpan">useragent.</span>OperatingSystem
+            <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.fromJSON">
+            function <span class="apidocSignatureSpan">useragent.</span>fromJSON
+            <span class="apidocSignatureSpan">(details)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.is">
+            function <span class="apidocSignatureSpan">useragent.</span>is
+            <span class="apidocSignatureSpan">(useragent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.lookup">
+            function <span class="apidocSignatureSpan">useragent.</span>lookup
+            <span class="apidocSignatureSpan">(userAgent, jsAgent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.parse">
+            function <span class="apidocSignatureSpan">useragent.</span>parse
+            <span class="apidocSignatureSpan">(userAgent, jsAgent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">useragent.</span>Agent.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">useragent.</span>Device.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">useragent.</span>OperatingSystem.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">useragent.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent.Agent">module useragent.Agent</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Agent.Agent">
+            function <span class="apidocSignatureSpan">useragent.</span>Agent
+            <span class="apidocSignatureSpan">(family, major, minor, patch, source)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent.Agent.prototype">module useragent.Agent.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Agent.prototype.toAgent">
+            function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toAgent
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Agent.prototype.toJSON">
+            function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toJSON
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Agent.prototype.toString">
+            function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Agent.prototype.toVersion">
+            function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent.Device">module useragent.Device</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Device.Device">
+            function <span class="apidocSignatureSpan">useragent.</span>Device
+            <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent.Device.prototype">module useragent.Device.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Device.prototype.toJSON">
+            function <span class="apidocSignatureSpan">useragent.Device.prototype.</span>toJSON
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Device.prototype.toString">
+            function <span class="apidocSignatureSpan">useragent.Device.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.Device.prototype.toVersion">
+            function <span class="apidocSignatureSpan">useragent.Device.prototype.</span>toVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent.OperatingSystem">module useragent.OperatingSystem</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.OperatingSystem.OperatingSystem">
+            function <span class="apidocSignatureSpan">useragent.</span>OperatingSystem
+            <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.useragent.OperatingSystem.prototype">module useragent.OperatingSystem.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.OperatingSystem.prototype.toJSON">
+            function <span class="apidocSignatureSpan">useragent.OperatingSystem.prototype.</span>toJSON
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.OperatingSystem.prototype.toString">
+            function <span class="apidocSignatureSpan">useragent.OperatingSystem.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.useragent.OperatingSystem.prototype.toVersion">
+            function <span class="apidocSignatureSpan">useragent.OperatingSystem.prototype.</span>toVersion
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent" id="apidoc.module.useragent">module useragent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.useragent" id="apidoc.element.useragent.useragent">
+        function <span class="apidocSignatureSpan"></span>useragent
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function updater() {
+  try {
+    require('./lib/update').update(function updating(err, results) {
+      if (err) {
+        console.log('[useragent] Failed to update the parsed due to an error:');
+        console.log('[useragent] '+ (err.message ? err.message : err));
+        return;
+      }
+
+      regexps = results;
+
+      // OperatingSystem parsers:
+      osparsers = regexps.os;
+      osparserslength = osparsers.length;
+
+      // UserAgent parsers:
+      agentparsers = regexps.browser;
+      agentparserslength = agentparsers.length;
+
+      // Device parsers:
+      deviceparsers = regexps.device;
+      deviceparserslength = deviceparsers.length;
+    });
+  } catch (e) {
+    console.error('[useragent] If you want to use automatic updating, please add:');
+    console.error('[useragent]   - request (npm install request --save)');
+    console.error('[useragent]   - yamlparser (npm install yamlparser --save)');
+    console.error('[useragent] To your own package.json');
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Agent" id="apidoc.element.useragent.Agent">
+        function <span class="apidocSignatureSpan">useragent.</span>Agent
+        <span class="apidocSignatureSpan">(family, major, minor, patch, source)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Agent(family, major, minor, patch, source) {
+  this.family = family || 'Other';
+  this.major = major || '0';
+  this.minor = minor || '0';
+  this.patch = patch || '0';
+  this.source = source || '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Device" id="apidoc.element.useragent.Device">
+        function <span class="apidocSignatureSpan">useragent.</span>Device
+        <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Device(family, major, minor, patch) {
+  this.family = family || 'Other';
+  this.major = major || '0';
+  this.minor = minor || '0';
+  this.patch = patch || '0';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.OperatingSystem" id="apidoc.element.useragent.OperatingSystem">
+        function <span class="apidocSignatureSpan">useragent.</span>OperatingSystem
+        <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function OperatingSystem(family, major, minor, patch) {
+  this.family = family || 'Other';
+  this.major = major || '0';
+  this.minor = minor || '0';
+  this.patch = patch || '0';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.fromJSON" id="apidoc.element.useragent.fromJSON">
+        function <span class="apidocSignatureSpan">useragent.</span>fromJSON
+        <span class="apidocSignatureSpan">(details)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromJSON(details) {
+  if (typeof details === 'string') details = JSON.parse(details);
+
+  var agent = new Agent(details.family, details.major, details.minor, details.patch)
+    , os = details.os;
+
+  // The device family was added in v2.0
+  if ('device' in details) {
+    agent.device = new Device(details.device.family);
+  } else {
+    agent.device = new Device();
+  }
+
+  if ('os' in details &amp;&amp; os) {
+    // In v1.1.0 we only parsed out the Operating System name, not the full
+    // version which we added in v2.0. To provide backwards compatible we should
+    // we should set the details.os as family
+    if (typeof os === 'string') {
+      agent.os = new OperatingSystem(os);
+    } else {
+      agent.os = new OperatingSystem(os.family, os.major, os.minor, os.patch);
+    }
+  }
+
+  return agent;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Executed benchmark against method: "useragent.parse"
+Count (49), Cycles (3), Elapsed (5.534), Hz (947.6844321931629)
+
+Executed benchmark against method: "useragent.lookup"
+Count (11758), Cycles (3), Elapsed (5.395), Hz (229352.03831239208)
+```
+
+#### useragent.<span class="apidocCodeKeywordSpan">fromJSON</span>(obj);
+
+Transforms the JSON representation of a `Agent` instance back in to a working
+`Agent` instance
+
+```js
+var agent = useragent.parse(req.headers['user-agent'])
+, another = useragent.fromJSON(JSON.stringify(agent));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.is" id="apidoc.element.useragent.is">
+        function <span class="apidocSignatureSpan">useragent.</span>is
+        <span class="apidocSignatureSpan">(useragent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function is(useragent) {
+  var ua = (useragent || '').toLowerCase()
+    , details = {
+        chrome: false
+      , firefox: false
+      , ie: false
+      , mobile_safari: false
+      , mozilla: false
+      , opera: false
+      , safari: false
+      , webkit: false
+      , android: false
+      , version: (ua.match(exports.is.versionRE) || [0, "0"])[1]
+    };
+
+  if (~ua.indexOf('webkit')) {
+    details.webkit = true;
+
+    if (~ua.indexOf('android')){
+      details.android = true;
+    }
+
+    if (~ua.indexOf('chrome')) {
+      details.chrome = true;
+    } else if (~ua.indexOf('safari')) {
+      details.safari = true;
+
+      if (~ua.indexOf('mobile') &amp;&amp; ~ua.indexOf('apple')) {
+        details.mobile_safari = true;
+      }
+    }
+  } else if (~ua.indexOf('opera')) {
+    details.opera = true;
+  } else if (~ua.indexOf('trident') || ~ua.indexOf('msie')) {
+    details.ie = true;
+  } else if (~ua.indexOf('mozilla') &amp;&amp; !~ua.indexOf('compatible')) {
+    details.mozilla = true;
+
+    if (~ua.indexOf('firefox')) details.firefox = true;
+  }
+
+
+  return details;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+var agent = useragent.parse(req.headers['user-agent'])
+  , another = useragent.fromJSON(JSON.stringify(agent));
+
+console.log(agent == another);
+```
+
+#### useragent.<span class="apidocCodeKeywordSpan">is</span>(useragent string).browsername;
+
+This api provides you with a quick and dirty browser lookup. The underlying
+code is usually found on client side scripts so it's not the same quality as
+our `useragent.parse` method but it might be needed for legacy reasons.
+
+`useragent.is` returns a object with potential matched browser names
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.lookup" id="apidoc.element.useragent.lookup">
+        function <span class="apidocSignatureSpan">useragent.</span>lookup
+        <span class="apidocSignatureSpan">(userAgent, jsAgent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function lookup(userAgent, jsAgent) {
+  var key = (userAgent || '')+(jsAgent || '')
+    , cached = LRU.get(key);
+
+  if (cached) return cached;
+  LRU.set(key, (cached = exports.parse(userAgent, jsAgent)));
+
+  return cached;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var agent2 = useragent.parse(req.headers['user-agent'], req.query.jsuseragent);
+```
+
+The parse method returns a `Agent` instance which contains all details about the
+user agent. See the Agent section of the API documentation for the available
+methods.
+
+#### useragent.<span class="apidocCodeKeywordSpan">lookup</span>(useragent string[, js useragent]);
+
+This provides the same functionality as above, but it caches the user agent
+string and it's parsed result in memory to provide faster lookups in the
+future. This can be handy if you expect to parse a lot of user agent strings.
+
+It uses the same arguments as the `useragent.parse` method and returns exactly
+the same result, but it's just cached.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.parse" id="apidoc.element.useragent.parse">
+        function <span class="apidocSignatureSpan">useragent.</span>parse
+        <span class="apidocSignatureSpan">(userAgent, jsAgent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parse(userAgent, jsAgent) {
+  if (!userAgent || !isSafe(userAgent)) return new Agent();
+
+  var length = agentparserslength
+    , parsers = agentparsers
+    , i = 0
+    , parser
+    , res;
+
+  for (; i &lt; length; i++) {
+    if (res = parsers[i][0].exec(userAgent)) {
+      parser = parsers[i];
+
+      if (parser[1]) res[1] = parser[1].replace('$1', res[1]);
+      if (!jsAgent) return new Agent(
+          res[1]
+        , parser[2] || res[2]
+        , parser[3] || res[3]
+        , parser[4] || res[4]
+        , userAgent
+      );
+
+      break;
+    }
+  }
+
+  // Return early if we didn't find an match, but might still be able to parse
+  // the os and device, so make sure we supply it with the source
+  if (!parser || !res) return new Agent('', '', '', '', userAgent);
+
+  // Detect Chrome Frame, but make sure it's enabled! So we need to check for
+  // the Chrome/ so we know that it's actually using Chrome under the hood.
+  if (jsAgent &amp;&amp; ~jsAgent.indexOf('Chrome/') &amp;&amp; ~userAgent.indexOf('chromeframe')) {
+    res[1] = 'Chrome Frame (IE '+ res[1] +'.'+ res[2] +')';
+
+    // Run the JavaScripted userAgent string through the parser again so we can
+    // update the version numbers;
+    parser = parse(jsAgent);
+    parser[2] = parser.major;
+    parser[3] = parser.minor;
+    parser[4] = parser.patch;
+  }
+
+  return new Agent(
+      res[1]
+    , parser[2] || res[2]
+    , parser[3] || res[3]
+    , parser[4] || res[4]
+    , userAgent
+  );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+use this feature you need to add `yamlparser` and `request` to your package.json
+
+```
+npm install yamlparser --save
+npm install request --save
+```
+
+#### useragent.<span class="apidocCodeKeywordSpan">parse</span>(useragent string[, js useragent]);
+
+This is the actual user agent parser, this is where all the magic is happening.
+The function accepts 2 arguments, both should be a `string`. The first argument
+should the user agent string that is known on the server from the
+`req.headers.useragent` header. The other argument is optional and should be
+the user agent string that you see in the browser, this can be send from the
+browser using a xhr request or something like this. This allows you detect if
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent.Agent" id="apidoc.module.useragent.Agent">module useragent.Agent</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Agent.Agent" id="apidoc.element.useragent.Agent.Agent">
+        function <span class="apidocSignatureSpan">useragent.</span>Agent
+        <span class="apidocSignatureSpan">(family, major, minor, patch, source)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Agent(family, major, minor, patch, source) {
+  this.family = family || 'Other';
+  this.major = major || '0';
+  this.minor = minor || '0';
+  this.patch = patch || '0';
+  this.source = source || '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent.Agent.prototype" id="apidoc.module.useragent.Agent.prototype">module useragent.Agent.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Agent.prototype.toAgent" id="apidoc.element.useragent.Agent.prototype.toAgent">
+        function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toAgent
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toAgent() {
+  var output = this.family
+    , version = this.toVersion();
+
+  if (version) output += ' '+ version;
+  return output;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+The OperatingSystem has the same properties as the Agent, for the Device we
+don't have any versioning information available, so only the `family` property is
+set there. If we cannot find the family, they will default to `Other`.
+
+The following methods are available:
+
+#### Agent.<span class="apidocCodeKeywordSpan">toAgent</span>();
+
+Returns the family and version number concatinated in a nice human readable
+string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toAgent(); // 'Chrome 15.0.874'
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Agent.prototype.toJSON" id="apidoc.element.useragent.Agent.prototype.toJSON">
+        function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toJSON
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toJSON() {
+  return {
+      family: this.family
+    , major: this.major
+    , minor: this.minor
+    , patch: this.patch
+    , device: this.device
+    , os: this.os
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Returns the version of the browser in a human readable string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toVersion(); // '15.0.874'
+```
+
+#### Agent.<span class="apidocCodeKeywordSpan">toJSON</span>();
+
+Generates a JSON representation of the Agent. By using the `toJSON` method we
+automatically allow it to be stringified when supplying as to the
+`JSON.stringify` method.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Agent.prototype.toString" id="apidoc.element.useragent.Agent.prototype.toString">
+        function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() {
+  var agent = this.toAgent()
+    , os = this.os !== 'Other' ? this.os : false;
+
+  return agent + (os ? ' / ' + os : '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toAgent(); // 'Chrome 15.0.874'
+```
+
+#### Agent.<span class="apidocCodeKeywordSpan">toString</span>();
+
+Returns the results of the `Agent.toAgent()` but also adds the parsed operating
+system to the string in a human readable format.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toString(); // 'Chrome 15.0.874 / Mac OS X 10.8.1'
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Agent.prototype.toVersion" id="apidoc.element.useragent.Agent.prototype.toVersion">
+        function <span class="apidocSignatureSpan">useragent.Agent.prototype.</span>toVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toVersion() {
+  var version = '';
+
+  if (this.major) {
+    version += this.major;
+
+    if (this.minor) {
+     version += '.' + this.minor;
+
+     // Special case here, the patch can also be Alpha, Beta etc so we need
+     // to check if it's a string or not.
+     if (this.patch) {
+      version += (isNaN(+this.patch) ? ' ' : '.') + this.patch;
+     }
+    }
+  }
+
+  return version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toString(); // 'Chrome 15.0.874 / Mac OS X 10.8.1'
+
+// as it's a to string method you can also concat it with another string
+'your useragent is ' + agent;
+// 'your useragent is Chrome 15.0.874 / Mac OS X 10.8.1'
+```
+#### Agent.<span class="apidocCodeKeywordSpan">toVersion</span>();
+
+Returns the version of the browser in a human readable string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toVersion(); // '15.0.874'
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent.Device" id="apidoc.module.useragent.Device">module useragent.Device</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Device.Device" id="apidoc.element.useragent.Device.Device">
+        function <span class="apidocSignatureSpan">useragent.</span>Device
+        <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Device(family, major, minor, patch) {
+  this.family = family || 'Other';
+  this.major = major || '0';
+  this.minor = minor || '0';
+  this.patch = patch || '0';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent.Device.prototype" id="apidoc.module.useragent.Device.prototype">module useragent.Device.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Device.prototype.toJSON" id="apidoc.element.useragent.Device.prototype.toJSON">
+        function <span class="apidocSignatureSpan">useragent.Device.prototype.</span>toJSON
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toJSON() {
+  return {
+      family: this.family
+    , major: this.major || undefined
+    , minor: this.minor || undefined
+    , patch: this.patch || undefined
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Returns the version of the browser in a human readable string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toVersion(); // '15.0.874'
+```
+
+#### Agent.<span class="apidocCodeKeywordSpan">toJSON</span>();
+
+Generates a JSON representation of the Agent. By using the `toJSON` method we
+automatically allow it to be stringified when supplying as to the
+`JSON.stringify` method.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Device.prototype.toString" id="apidoc.element.useragent.Device.prototype.toString">
+        function <span class="apidocSignatureSpan">useragent.Device.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() {
+  var output = this.family
+    , version = this.toVersion();
+
+  if (version) output += ' '+ version;
+  return output;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toAgent(); // 'Chrome 15.0.874'
+```
+
+#### Agent.<span class="apidocCodeKeywordSpan">toString</span>();
+
+Returns the results of the `Agent.toAgent()` but also adds the parsed operating
+system to the string in a human readable format.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toString(); // 'Chrome 15.0.874 / Mac OS X 10.8.1'
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.Device.prototype.toVersion" id="apidoc.element.useragent.Device.prototype.toVersion">
+        function <span class="apidocSignatureSpan">useragent.Device.prototype.</span>toVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toVersion() {
+  var version = '';
+
+  if (this.major) {
+    version += this.major;
+
+    if (this.minor) {
+     version += '.' + this.minor;
+
+     // Special case here, the patch can also be Alpha, Beta etc so we need
+     // to check if it's a string or not.
+     if (this.patch) {
+      version += (isNaN(+this.patch) ? ' ' : '.') + this.patch;
+     }
+    }
+  }
+
+  return version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toString(); // 'Chrome 15.0.874 / Mac OS X 10.8.1'
+
+// as it's a to string method you can also concat it with another string
+'your useragent is ' + agent;
+// 'your useragent is Chrome 15.0.874 / Mac OS X 10.8.1'
+```
+#### Agent.<span class="apidocCodeKeywordSpan">toVersion</span>();
+
+Returns the version of the browser in a human readable string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toVersion(); // '15.0.874'
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent.OperatingSystem" id="apidoc.module.useragent.OperatingSystem">module useragent.OperatingSystem</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.OperatingSystem.OperatingSystem" id="apidoc.element.useragent.OperatingSystem.OperatingSystem">
+        function <span class="apidocSignatureSpan">useragent.</span>OperatingSystem
+        <span class="apidocSignatureSpan">(family, major, minor, patch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function OperatingSystem(family, major, minor, patch) {
+  this.family = family || 'Other';
+  this.major = major || '0';
+  this.minor = minor || '0';
+  this.patch = patch || '0';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.useragent.OperatingSystem.prototype" id="apidoc.module.useragent.OperatingSystem.prototype">module useragent.OperatingSystem.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.OperatingSystem.prototype.toJSON" id="apidoc.element.useragent.OperatingSystem.prototype.toJSON">
+        function <span class="apidocSignatureSpan">useragent.OperatingSystem.prototype.</span>toJSON
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toJSON(){
+  return {
+      family: this.family
+    , major: this.major || undefined
+    , minor: this.minor || undefined
+    , patch: this.patch || undefined
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Returns the version of the browser in a human readable string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toVersion(); // '15.0.874'
+```
+
+#### Agent.<span class="apidocCodeKeywordSpan">toJSON</span>();
+
+Generates a JSON representation of the Agent. By using the `toJSON` method we
+automatically allow it to be stringified when supplying as to the
+`JSON.stringify` method.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.OperatingSystem.prototype.toString" id="apidoc.element.useragent.OperatingSystem.prototype.toString">
+        function <span class="apidocSignatureSpan">useragent.OperatingSystem.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() {
+  var output = this.family
+    , version = this.toVersion();
+
+  if (version) output += ' '+ version;
+  return output;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toAgent(); // 'Chrome 15.0.874'
+```
+
+#### Agent.<span class="apidocCodeKeywordSpan">toString</span>();
+
+Returns the results of the `Agent.toAgent()` but also adds the parsed operating
+system to the string in a human readable format.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toString(); // 'Chrome 15.0.874 / Mac OS X 10.8.1'
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.useragent.OperatingSystem.prototype.toVersion" id="apidoc.element.useragent.OperatingSystem.prototype.toVersion">
+        function <span class="apidocSignatureSpan">useragent.OperatingSystem.prototype.</span>toVersion
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toVersion() {
+  var version = '';
+
+  if (this.major) {
+    version += this.major;
+
+    if (this.minor) {
+     version += '.' + this.minor;
+
+     // Special case here, the patch can also be Alpha, Beta etc so we need
+     // to check if it's a string or not.
+     if (this.patch) {
+      version += (isNaN(+this.patch) ? ' ' : '.') + this.patch;
+     }
+    }
+  }
+
+  return version;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toString(); // 'Chrome 15.0.874 / Mac OS X 10.8.1'
+
+// as it's a to string method you can also concat it with another string
+'your useragent is ' + agent;
+// 'your useragent is Chrome 15.0.874 / Mac OS X 10.8.1'
+```
+#### Agent.<span class="apidocCodeKeywordSpan">toVersion</span>();
+
+Returns the version of the browser in a human readable string.
+
+```js
+var agent = useragent.parse(req.headers['user-agent']);
+agent.toVersion(); // '15.0.874'
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
